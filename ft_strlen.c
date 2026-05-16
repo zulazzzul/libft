@@ -6,20 +6,18 @@
 /*   By: nd-abreu <nd-abreu@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 20:15:30 by nd-abreu          #+#    #+#             */
-/*   Updated: 2026/04/29 14:45:16 by nd-abreu         ###   ########.fr       */
+/*   Updated: 2026/05/16 00:34:43 by nd-abreu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char*s)
+size_t	ft_strlen(const char *str)
 {
-	size_t a;
-	 a = 0;
-	while (str[len]!= '\0')
-		a++;
-	return (a);
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
-
-
-

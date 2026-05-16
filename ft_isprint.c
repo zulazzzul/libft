@@ -6,15 +6,15 @@
 /*   By: nd-abreu <nd-abreu@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 19:13:22 by nd-abreu          #+#    #+#             */
-/*   Updated: 2026/04/24 20:09:31 by nd-abreu         ###   ########.fr       */
+/*   Updated: 2026/05/16 00:28:38 by nd-abreu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if(c>= 32 && c <= 126)
-		return(1);
-	return(0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

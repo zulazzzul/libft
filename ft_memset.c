@@ -6,20 +6,23 @@
 /*   By: nd-abreu <nd-abreu@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:47:34 by nd-abreu          #+#    #+#             */
-/*   Updated: 2026/04/30 03:51:58 by nd-abreu         ###   ########.fr       */
+/*   Updated: 2026/05/16 00:31:19 by nd-abreu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char *tmp_ptr;
+	size_t			i;
+	unsigned char	*ptr;
 
-	tmp_ptr = (unsigned char *) b;
-	while (len > 0)
+	i = 0;
+	ptr = (unsigned char *)s;
+	while (i < n)
 	{
-		*(temp_ptr++) = (unsigned char) c;
-		len--;
+		ptr[i] = (unsigned char)c;
+		i++;
 	}
-
-	return (b);
+	return (s);
 }
